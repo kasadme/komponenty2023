@@ -4,11 +4,21 @@
  */
 package com.mycompany.zastosowanieProgramowaniaKomponentowego.Components;
 
+import com.mycompany.zastosowanieProgramowaniaKomponentowego.Enums.CalculatorLanguage;
+
 /**
  *
  * @author Julia
  */
 public class CylinderCalculator extends javax.swing.JPanel {
+
+    private Double height;
+    private Double radius;
+    private Double result;
+    private CalculatorLanguage calculatorLanguage = CalculatorLanguage.ENG;
+    private String title = "Walec";
+    private Double getResult;
+
 
     /**
      * Creates new form CylinderCalculator
