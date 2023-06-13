@@ -91,7 +91,7 @@ public class TestCalcComponent extends javax.swing.JFrame {
 
         jLabel9.setText("B");
 
-        fontCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Monospaced", "Times New Roman", "Baskerville Old Face" }));
+        fontCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Baskerville Old Face", "Monospaced", "Times New Roman" }));
         fontCB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fontCBActionPerformed(evt);

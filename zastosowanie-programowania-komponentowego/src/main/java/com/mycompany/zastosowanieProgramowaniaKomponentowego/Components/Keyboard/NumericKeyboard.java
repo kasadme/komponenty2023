@@ -5,8 +5,12 @@
 package com.mycompany.zastosowanieProgramowaniaKomponentowego.Components.Keyboard;
 
 import com.mycompany.zastosowanieProgramowaniaKomponentowego.Components.Calculator.Calculator;
+import java.awt.Button;
 import java.awt.Color;
 import java.awt.Font;
+import static java.awt.font.TextAttribute.FONT;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import javax.swing.JTextField;
 
@@ -25,10 +29,37 @@ public class NumericKeyboard extends javax.swing.JPanel {
     private String titleTxt = "KLAWIATURA";
     
     private Font titleFont;
+    
+    private List keyboardButtons = new ArrayList<Button>();
+    
+    private Font keyboardButtonsFont;
         
     public NumericKeyboard() {       
         initComponents();
         
+        keyboardButtonsFont = nr1Button.getFont();
+        
+    }
+    
+    public Font getKeyboardButtonsFont(){
+        return keyboardButtonsFont;
+    }
+    
+    public void setButtonsTextSize(int size) {
+        Font font = new Font(keyboardButtonsFont.getFontName(), Font.PLAIN, size);
+
+        for(int i=0; i<keyboardButtons.size()-1; i++){
+            
+            Button btn = (Button) keyboardButtons.get(i);
+            btn.setFont(font);
+//            System.out.println("-------------ZMIANA ROZMIARU");
+            btn.repaint();
+//            System.out.println(btn.getFont());
+
+        }
+        
+        
+        repaint();
     }
     
     public void setTitleFont(Font font){
@@ -74,8 +105,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
         nr8Button = new java.awt.Button();
         nr9Button = new java.awt.Button();
         resetButton = new java.awt.Button();
-        nextTFButton = new java.awt.Button();
-        jPanel1 = new javax.swing.JPanel();
+        nr0Button = new java.awt.Button();
         switchEditedTFButton = new java.awt.Button();
         title = new javax.swing.JLabel();
 
@@ -169,15 +199,13 @@ public class NumericKeyboard extends javax.swing.JPanel {
         });
         jPanel2.add(resetButton);
 
-        nextTFButton.setLabel("0");
-        nextTFButton.addActionListener(new java.awt.event.ActionListener() {
+        nr0Button.setLabel("0");
+        nr0Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nextTFButtonnrButtonActionPerformed(evt);
+                nr0ButtonnrButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(nextTFButton);
-
-        jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.LINE_AXIS));
+        jPanel2.add(nr0Button);
 
         switchEditedTFButton.setLabel("-->");
         switchEditedTFButton.addActionListener(new java.awt.event.ActionListener() {
@@ -185,9 +213,20 @@ public class NumericKeyboard extends javax.swing.JPanel {
                 switchEditedTFButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(switchEditedTFButton);
+        jPanel2.add(switchEditedTFButton);
 
-        jPanel2.add(jPanel1);
+        keyboardButtons.add(nr1Button);
+        keyboardButtons.add(nr2Button);
+        keyboardButtons.add(nr3Button);
+        keyboardButtons.add(nr4Button);
+        keyboardButtons.add(nr5Button);
+        keyboardButtons.add(nr6Button);
+        keyboardButtons.add(nr7Button);
+        keyboardButtons.add(nr8Button);
+        keyboardButtons.add(nr9Button);
+        keyboardButtons.add(nr0Button);
+        keyboardButtons.add(resetButton);
+        keyboardButtons.add(switchEditedTFButton);
 
         add(jPanel2, java.awt.BorderLayout.CENTER);
 
@@ -355,7 +394,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
         connectedCalculator.resetParametersTF();
     }//GEN-LAST:event_resetButtonActionPerformed
 
-    private void nextTFButtonnrButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextTFButtonnrButtonActionPerformed
+    private void nr0ButtonnrButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nr0ButtonnrButtonActionPerformed
         lastTF = connectedCalculator.getLastTF();
         if(!Objects.isNull(lastTF)){
             String tfNewText = lastTF.getText();
@@ -370,7 +409,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             lastTF.setText(tfNewText);
             lastTF.setForeground(Color.BLACK);
         }
-    }//GEN-LAST:event_nextTFButtonnrButtonActionPerformed
+    }//GEN-LAST:event_nr0ButtonnrButtonActionPerformed
 
     private void switchEditedTFButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_switchEditedTFButtonActionPerformed
         connectedCalculator.switchLastTF();
@@ -379,9 +418,8 @@ public class NumericKeyboard extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    javax.swing.JPanel jPanel1;
     javax.swing.JPanel jPanel2;
-    java.awt.Button nextTFButton;
+    java.awt.Button nr0Button;
     java.awt.Button nr1Button;
     java.awt.Button nr2Button;
     java.awt.Button nr3Button;
@@ -395,4 +433,6 @@ public class NumericKeyboard extends javax.swing.JPanel {
     java.awt.Button switchEditedTFButton;
     javax.swing.JLabel title;
     // End of variables declaration//GEN-END:variables
+
+
 }
