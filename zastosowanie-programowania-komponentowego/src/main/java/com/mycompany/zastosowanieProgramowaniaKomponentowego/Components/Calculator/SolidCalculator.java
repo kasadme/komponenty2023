@@ -570,14 +570,4 @@ public class SolidCalculator extends javax.swing.JPanel implements Calculator {
         }
     }
 
-    @Override
-    public String getHeightTFPlaceholder() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public String getRadiusTFPlaceholder() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
 }

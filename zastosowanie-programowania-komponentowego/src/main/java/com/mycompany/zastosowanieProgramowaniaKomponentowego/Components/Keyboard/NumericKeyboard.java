@@ -243,7 +243,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             String tfNewText = lastTF.getText();
             lastTF.setText(evt.getActionCommand());
 
-            if(tfNewText.equals(connectedCalculator.getHeightTFPlaceholder()) || tfNewText.equals(connectedCalculator.getRadiusTFPlaceholder()) ){
+            if(tfNewText.equals(connectedCalculator.getFirstTFPlaceholder()) || tfNewText.equals(connectedCalculator.getSecondTFPlaceholder()) ){
                 tfNewText = evt.getActionCommand();
             }
             else {
@@ -260,7 +260,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             String tfNewText = lastTF.getText();
             lastTF.setText(evt.getActionCommand());
 
-            if(tfNewText.equals(connectedCalculator.getHeightTFPlaceholder()) || tfNewText.equals(connectedCalculator.getRadiusTFPlaceholder()) ){
+            if(tfNewText.equals(connectedCalculator.getFirstTFPlaceholder()) || tfNewText.equals(connectedCalculator.getSecondTFPlaceholder()) ){
                 tfNewText = evt.getActionCommand();
             }
             else {
@@ -277,7 +277,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             String tfNewText = lastTF.getText();
             lastTF.setText(evt.getActionCommand());
 
-            if(tfNewText.equals(connectedCalculator.getHeightTFPlaceholder()) || tfNewText.equals(connectedCalculator.getRadiusTFPlaceholder()) ){
+            if(tfNewText.equals(connectedCalculator.getFirstTFPlaceholder()) || tfNewText.equals(connectedCalculator.getSecondTFPlaceholder()) ){
                 tfNewText = evt.getActionCommand();
             }
             else {
@@ -294,7 +294,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             String tfNewText = lastTF.getText();
             lastTF.setText(evt.getActionCommand());
 
-            if(tfNewText.equals(connectedCalculator.getHeightTFPlaceholder()) || tfNewText.equals(connectedCalculator.getRadiusTFPlaceholder()) ){
+            if(tfNewText.equals(connectedCalculator.getFirstTFPlaceholder()) || tfNewText.equals(connectedCalculator.getSecondTFPlaceholder()) ){
                 tfNewText = evt.getActionCommand();
             }
             else {
@@ -311,7 +311,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             String tfNewText = lastTF.getText();
             lastTF.setText(evt.getActionCommand());
 
-            if(tfNewText.equals(connectedCalculator.getHeightTFPlaceholder()) || tfNewText.equals(connectedCalculator.getRadiusTFPlaceholder()) ){
+            if(tfNewText.equals(connectedCalculator.getFirstTFPlaceholder()) || tfNewText.equals(connectedCalculator.getSecondTFPlaceholder()) ){
                 tfNewText = evt.getActionCommand();
             }
             else {
@@ -328,7 +328,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             String tfNewText = lastTF.getText();
             lastTF.setText(evt.getActionCommand());
 
-            if(tfNewText.equals(connectedCalculator.getHeightTFPlaceholder()) || tfNewText.equals(connectedCalculator.getRadiusTFPlaceholder()) ){
+            if(tfNewText.equals(connectedCalculator.getFirstTFPlaceholder()) || tfNewText.equals(connectedCalculator.getSecondTFPlaceholder()) ){
                 tfNewText = evt.getActionCommand();
             }
             else {
@@ -345,7 +345,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             String tfNewText = lastTF.getText();
             lastTF.setText(evt.getActionCommand());
 
-            if(tfNewText.equals(connectedCalculator.getHeightTFPlaceholder()) || tfNewText.equals(connectedCalculator.getRadiusTFPlaceholder()) ){
+            if(tfNewText.equals(connectedCalculator.getFirstTFPlaceholder()) || tfNewText.equals(connectedCalculator.getSecondTFPlaceholder()) ){
                 tfNewText = evt.getActionCommand();
             }
             else {
@@ -362,7 +362,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             String tfNewText = lastTF.getText();
             lastTF.setText(evt.getActionCommand());
 
-            if(tfNewText.equals(connectedCalculator.getHeightTFPlaceholder()) || tfNewText.equals(connectedCalculator.getRadiusTFPlaceholder()) ){
+            if(tfNewText.equals(connectedCalculator.getFirstTFPlaceholder()) || tfNewText.equals(connectedCalculator.getSecondTFPlaceholder()) ){
                 tfNewText = evt.getActionCommand();
             }
             else {
@@ -379,7 +379,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             String tfNewText = lastTF.getText();
             lastTF.setText(evt.getActionCommand());
 
-            if(tfNewText.equals(connectedCalculator.getHeightTFPlaceholder()) || tfNewText.equals(connectedCalculator.getRadiusTFPlaceholder()) ){
+            if(tfNewText.equals(connectedCalculator.getFirstTFPlaceholder()) || tfNewText.equals(connectedCalculator.getSecondTFPlaceholder()) ){
                 tfNewText = evt.getActionCommand();
             }
             else {
@@ -400,7 +400,7 @@ public class NumericKeyboard extends javax.swing.JPanel {
             String tfNewText = lastTF.getText();
             lastTF.setText(evt.getActionCommand());
 
-            if(tfNewText.equals(connectedCalculator.getHeightTFPlaceholder()) || tfNewText.equals(connectedCalculator.getRadiusTFPlaceholder()) ){
+            if(tfNewText.equals(connectedCalculator.getFirstTFPlaceholder()) || tfNewText.equals(connectedCalculator.getSecondTFPlaceholder()) ){
                 tfNewText = evt.getActionCommand();
             }
             else {

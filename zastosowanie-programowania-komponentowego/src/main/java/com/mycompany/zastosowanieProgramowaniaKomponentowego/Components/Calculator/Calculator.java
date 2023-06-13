@@ -15,8 +15,8 @@ import javax.swing.JTextField;
 public interface Calculator {
     public void switchLastTF();
     public void resetParametersTF();
-    public String getHeightTFPlaceholder();
-    public String getRadiusTFPlaceholder();
+    public String getFirstTFPlaceholder();
+    public String getSecondTFPlaceholder();
     public JTextField getLastTF();
     public void setCalculatorType(String type);
     
