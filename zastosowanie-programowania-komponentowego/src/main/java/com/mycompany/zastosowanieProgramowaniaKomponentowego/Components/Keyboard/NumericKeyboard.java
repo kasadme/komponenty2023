@@ -6,6 +6,7 @@ package com.mycompany.zastosowanieProgramowaniaKomponentowego.Components.Keyboar
 
 import com.mycompany.zastosowanieProgramowaniaKomponentowego.Components.Calculator.Calculator;
 import java.awt.Color;
+import java.awt.Font;
 import java.util.Objects;
 import javax.swing.JTextField;
 
@@ -19,17 +20,25 @@ public class NumericKeyboard extends javax.swing.JPanel {
     
     Calculator connectedCalculator;
     
-    private Color color = Color.BLACK;
+    private Color titleColor = Color.BLACK;
     
     private String titleTxt = "KLAWIATURA";
+    
+    private Font titleFont;
         
     public NumericKeyboard() {       
         initComponents();
         
     }
     
+    public void setTitleFont(Font font){
+        titleFont = font;
+        title.setFont(font);
+    }
+    
     public void setTitleColor(Color color){
         title.setForeground(color);
+        titleColor = color;
     }
     
     public void setConnectedCalculator(Calculator calc){
